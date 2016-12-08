@@ -204,6 +204,7 @@ p.copyright {
 
 
 .modal-dialog{
-    width: auto;
+    width: 75%;
+    height: auto;
 }
 
