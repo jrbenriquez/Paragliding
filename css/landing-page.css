@@ -59,6 +59,12 @@ h6 {
     height: 25em;
     width: auto;
  }
+.modal-dialog{
+    width: 75%;
+    height: auto;
+}
+
+ 
 .intro-header {
     padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
     padding-bottom: 50px;
@@ -116,6 +122,11 @@ h6 {
     .intro-divider {
         width: 100%;
     }
+
+    .modal-dialog{
+    width: 100%;
+    height: auto;
+}
 }
 
 .network-name {
@@ -173,6 +184,8 @@ h6 {
         float: center;
         margin-top: 15px;
     }
+
+
 }
 
 @media(max-width:767px) {
@@ -191,6 +204,8 @@ h6 {
     ul.banner-social-buttons > li:last-child {
         margin-bottom: 0;
     }
+
+    
 }
 
 footer {
@@ -201,13 +216,6 @@ footer {
 p.copyright {
     margin: 15px 0 0;
 }
-
-
-.modal-dialog{
-    width: 75%;
-    height: auto;
-}
-
 
 .tab-text {
     font-size: 1em;
