@@ -16,7 +16,6 @@
 
     <!-- Custom CSS -->
     <link href="css/landing-page.css" rel="stylesheet">
-
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
@@ -105,7 +104,6 @@
                 <div class="col-lg-8 text-center"><h1> Tandem Paragliding with an APPI Certified Tandem Pilot</h1>
                 <h2><em>What is Tandem Paragliding</em> </h2>
                 <p>Tandem flights are the sweet result of a simple recipe: a wing large enough to hold two people, an instructor and a passenger. Each person is seated comfortably in their own harness which are attached together, with the passenger in front and the pilot right behind.</p>
-                <div class="row">
                     <div id="myCarousel" class="carousel slide" data-ride="carousel">
                       <!-- Indicators -->
                       <ol class="carousel-indicators">
@@ -146,27 +144,59 @@
                       </a>
                 </div>
 
-            </div>
-            <div class="row" style="margin-top: 5%">
-                <div class="col-lg-4">
-                    <img class="btn-pin" src="img/bag.png" />
-                    <p>What to bring</p>
+                <div class="row" style="margin-top: 5%">
+                    <div class="col-lg-4">
+                        <a href="#bring" data-toggle="modal" data-targer="#bring">
+                        <img class="btn-pin" src="img/bag.png" />
+                        </a>
+                        <p>What to bring</p>
+                    </div>
+                    <div class="col-lg-4">
+                        <img class="btn-pin" src="img/car.png" />
+                        <p>How to get there</p>
+                    </div>
+                    <div class="col-lg-4">
+                        <img class="btn-pin" src="img/pilot.png" />
+                        <p>Who's the pilot</p>
+                    </div>
+                 <p><h2>[[CONTENT HEsRE]]</h2> </p><p> AND MAYBE A FEW MORE PAGES</p>
+                 <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#book">Open Modal</button>
                 </div>
-                <div class="col-lg-4">
-                    <img class="btn-pin" src="img/car.png" />
-                    <p>How to get there</p>
-                </div>
-                <div class="col-lg-4">
-                    <img class="btn-pin" src="img/pilot.png" />
-                    <p>Who's the pilot</p>
-                </div>
-             <p><h2>[[CONTENT HERE]]</h2> </p><p> AND MAYBE A FEW MORE PAGES</p></div>
         </div>
 
     </div>
 
+
+<!-- MODAL DIALOGS -->
+<div id="bring" class="modal fade" role="dialog">
+    <div class="narrow-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h2 class="modal-title"> What to Bring </h2>
+            </div>
+            <div class="modal-body"></div>
+                <p>Expect hot and sunny weather. Bring enough water with you.<p> <br>
+ 
+                <p>Polyester/trekking pants (shorts, not really recommended due to the sharp grasses). Any dry fit (or similar material) shirt for comfort. You can also wear leggings.</p> <br>
+                 
+                <p>Sun protection: hat, sun block, shades, long sleeve jersey.</p><br>
+                 
+                <p>Outdoor shoes, trekking shoes, trail shoes or running shoes. SLIPPERS STRONGLY DISCOURAGED.</p><br>
+                 
+                <p>Toiletries: insect  repellant, alcohol, wipes.</p><br>
+                 
+                <p>Helmet: Will be provided, but if you prefer to use your own you can bring it with you.</p><br>
+                 
+                <p>Camera or video camera for souvenir shots; GoPro for a fee available. </p><br>
+            <div class="modal-footer"></div>
+        </div>
+    </div>
+</div>
+
+
 <div id="book" class="modal fade" role="dialog">
-  <div class="modal-dialog">
+    <div class="modal-dialog">
 
     <!-- Modal content-->
     <div class="modal-content">
@@ -332,10 +362,7 @@
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
       </div>
     </div>
-
-  </div>
 </div>
-
 
 
 
