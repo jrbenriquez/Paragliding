@@ -44,9 +44,6 @@ h6 {
     background-color: white;
 }
 
-.bookButton {
-    background-color: #ADD8E6;
-}
 logotray {
     position: relative;
 }
@@ -330,9 +327,10 @@ input:focus {
 
 .network-name {
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 20px;
     font-weight: 400;
     letter-spacing: 2px;
+    font-weight: bold;
 }
 
 .content-section-a {

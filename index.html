@@ -278,7 +278,7 @@
     $( document ).click(function() {
       $( "#semiLogo" ).effect( "bounce" );
     });
-    var scrollLength = "-28vmin";
+    var scrollLength = "-18em";
     $('.parallax-window').parallax({imageSrc: 'img/pax.jpg'});
 
     $(".togglePic").click(function() {
@@ -290,14 +290,15 @@
 
 
         $("subheading *").animate({opacity: 0}, 1000);
-        $("logotray").animate({top: scrollLength},1000);
+        $("logotray *").animate({top: scrollLength},1000);
     });
     
     $("body").click(function(event) {
         if($(event.target).hasClass('togglePic') === false){
             $(".togglePic").removeClass("activeLogo");
-            $("logotray").animate({top: "0vmin"},1000);
+            $("logotray *").animate({top: "0"},1000);
             $("subheading *").animate({opacity: 1}, 1000);
+            $(".togglePic").animate({opacity: 1}, 1000);
             
         }
     });
