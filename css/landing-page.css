@@ -29,8 +29,6 @@ h6 {
 
 #mainBody {
     background-color: #a2b6d3;
-    width: 100%;
-    height: 1000px;
 }
 #mainBody div div h2 {
     color: white;
@@ -41,6 +39,9 @@ h6 {
     color: white;
     font-size: 3vmin;
 
+}
+#subBody {
+    background-color: white;
 }
 logotray {
     position: relative;
@@ -160,7 +161,8 @@ logotray div h3 {
     width: 210px;
     height: 210px;
     text-indent: -99999px;
-    margin-bottom: 2em;
+    margin-top: 3vmin;
+    margin-bottom: 0em;
 
 }
 .car {
@@ -211,7 +213,7 @@ logotray div h3 {
         top: 50em;
         width: 80px;
         height: 80px;
-        margin-bottom: 0em;
+        margin-bottom: 2em;
     }
 
     .parallelogram {
