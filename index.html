@@ -85,6 +85,7 @@
     </div>
 
     <div id="mainBody" class="container">
+        <subheading>
         <div class="row">
             <div class="col-lg-12 text-center">
             <h2>Experience Paragliding!</h2>
@@ -99,22 +100,28 @@
             <div class="col-lg-12 text-center">
             <h6>Few things to help you out</h6>
             </div>
+        </div>
+        </subheading>
         <div class="col-lg-12">
         <logotray>
             <div class="parallelogram row center-block"></div>
             <div class="col-xs-4 text-center">
                     <a class="togglePic center-block bag">Logo</a>
+                    <h3>Stuff to Bring</h3>
             </div>
             <div class="col-xs-4 text-center ">
                     <a class="togglePic center-block car">Logo</a>
+                    <h3>Getting There</h3>
             </div>
             <div class="col-xs-4 text-center ">
                     <a class="togglePic center-block pilot">Logo</a>
+                    <h3>Know the Pilot</h3>
             </div>
             
 
         </logotray>
         </div>
+
     </div>
 
 <!-- MODAL DIALOGS -->
@@ -317,8 +324,12 @@
     <script type="text/JavaScript">
 
     $(".togglePic").click(function() {
-        alert($("html").css("width"));
+
+        $("subheading").css("visibility", "hidden");
+        $("logotray").animate({top: "-70vmin"},1000);
     });
+
+    alert($("html").css("width"));
     </script>
 
 

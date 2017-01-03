@@ -42,9 +42,16 @@ h6 {
     font-size: 3vmin;
 
 }
+logotray {
+    position: relative;
+}
 logotray div {
     position:relative;
     z-index: 2;
+}
+
+logotray div h3 {
+    font-size: 5vmin;
 }
 .content{
     margin-left: 10%;
@@ -145,7 +152,7 @@ logotray div {
          -o-transform: skew(-30deg);
     background-color: #a3d39c;
     position:relative;
-    top: 20em;
+    top: 22em;
 }
 
 .togglePic {
@@ -173,7 +180,7 @@ logotray div {
     text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
 }
 
-@media(max-width:767px) {
+@media(max-width:1300px) {
     .intro-message {
         padding-bottom: 15%;
     }
@@ -204,23 +211,25 @@ logotray div {
         top: 50em;
         width: 80px;
         height: 80px;
-        margin-bottom: 1em;
+        margin-bottom: 0em;
     }
 
     .parallelogram {
-        top: 10em;
+        top: 12em;
     }
 
     .bag  {
     background: url('../img/bag_xs.png') bottom;
-}
+    }
     .car  {
     background: url('../img/car_xs.png') bottom;
-}
+    }
     .pilot  {
     background: url('../img/pilot_xs.png') bottom;
-}
-}
+    }
+    logotray div h3 {
+        font-size: 2em;
+    }
 }
 
 .network-name {
