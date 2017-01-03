@@ -21,6 +21,8 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
     <script src="https://use.fontawesome.com/8956ad6ba9.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="js/parallax.min.js"></script>
+    <script src="js/parallax.js"></script>
 
 
 </head>
@@ -84,7 +86,7 @@
 
     </div>
 
-    <div id="mainBody" class="container">
+    <div id="mainBody" class="container parallax-window">
         <subheading>
         <div class="row">
             <div class="col-lg-12 text-center">
@@ -107,7 +109,7 @@
         <div class="col-lg-12">
         <logotray>
             
-            <div class="col-xs-4 text-center">
+            <div class="col-xs-4 text-center ">
                     <a class="togglePic center-block bag">Logo</a>
                     <h3>Stuff to Bring</h3>
             </div>
@@ -325,10 +327,13 @@
 
     <script type="text/JavaScript">
 
-    $(".togglePic").click(function() {
+    $('.parallax-window').parallax({imageSrc: 'img/parallax.jpg'});
 
+    $(".togglePic").click(function() {
+        $(".togglePic").removeClass("activeLogo");
+        $(this).addClass("activeLogo");
         $("subheading").css("visibility", "hidden");
-        $("logotray").animate({top: "-40vmin"},1000);
+        $("logotray").animate({top: "-28vmin"},1000);
     });
 
     //alert($("html").css("width"));

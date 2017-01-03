@@ -28,7 +28,7 @@ h6 {
 }
 
 #mainBody {
-    background-color: #a2b6d3;
+    
 }
 #mainBody div div h2 {
     color: white;
@@ -175,6 +175,9 @@ logotray div h3 {
     background: url('../img/pilot.png') bottom;
 }
 .togglePic:hover {
+    background-position: 0 0;
+}
+.activeLogo {
     background-position: 0 0;
 }
 
