@@ -43,6 +43,10 @@ h6 {
 #subBody {
     background-color: white;
 }
+
+.bookButton {
+    background-color: #ADD8E6;
+}
 logotray {
     position: relative;
 }
@@ -173,15 +177,11 @@ footer{
     width: 75%;
     height: auto;
 }
-.btn-pin {
+.button {
+    margin: 0em 5em 0em 5em;
     width: 10em;
-    height: auto;
 }
-.img-slider {
-    width: 600px;
-    height: auto;
-    display: inline-block;
-}
+
 .center-holder {
     text-align: center;
     margin-left: 0em;
