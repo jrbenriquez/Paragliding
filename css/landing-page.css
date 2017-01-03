@@ -70,7 +70,10 @@ logotray div h3 {
     font-size: 18px;
     font-weight: 400;
 }
-
+.fadeItOut {
+    animation-name: fadeOut;
+    animation-duration: 2s;
+}
 
 .top {
 
@@ -114,6 +117,26 @@ logotray div h3 {
     height: auto;
     display: inline-block;
 }
+.center-holder {
+    text-align: center;
+    margin-left: 0em;
+}
+label {
+    font-size: 1em;
+}
+input {
+    
+    text-align: center;
+    margin-bottom: 1em;
+    font-size: 2em;
+}
+input:focus {
+    outline: none;
+}
+.nameEntry {
+    width:485px;
+    height: 500px;
+}
 .intro-header {
     padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
     padding-bottom: 50px;
@@ -121,12 +144,14 @@ logotray div h3 {
     color: #f8f8f8;
     background: url(../img/bg-header3.jpg) no-repeat center center;
     background-size: cover;
+
 }
 
 .intro-message {
     position: relative;
     padding-top: 20%;
     padding-bottom: 20%;
+
 }
 
 .row {
@@ -163,6 +188,7 @@ logotray div h3 {
     text-indent: -99999px;
     margin-top: 3vmin;
     margin-bottom: 0em;
+
 
 }
 .car {
@@ -264,7 +290,10 @@ logotray div h3 {
     width: 200px;
     border-top: 3px solid #e7e7e7;
 }
-
+.fadeItOut {
+    animation-name: fadeOut;
+    animation-duration: 1.5s;
+}
 .banner {
     padding: 100px 0;
     color: #f8f8f8;
@@ -285,6 +314,17 @@ logotray div h3 {
 .banner-social-buttons {
     margin-top: 0;
     padding: 1vh;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border: none;
+  border-bottom: solid 2px #c9c9c9;
+  transition: border 0.3s;
+}
+input[type="text"]:focus,
+input[type="text"].focus {
+  border-bottom: solid 2px #969696;
 }
 
 @media(max-width:1199px) {
@@ -331,3 +371,12 @@ p.copyright {
 .tab-text {
     font-size: 1em;
 }
+
+@keyframes fadeOut {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: 200px;}
