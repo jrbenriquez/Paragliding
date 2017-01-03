@@ -166,7 +166,7 @@
     iosFix:   true,
     androidFix: true,
     position: 'center',
-    overScrollFix: false,
+    overScrollFix: true,
 
     refresh: function() {
       this.boxWidth        = this.$element.outerWidth();
