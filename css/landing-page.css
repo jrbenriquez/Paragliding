@@ -18,12 +18,33 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Corbel","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
 }
 
+}
 #aboutme {
     margin: 5px;
+}
+
+#mainBody {
+    background-color: #a2b6d3;
+    width: 100%;
+    height: 1000px;
+}
+#mainBody div div h2 {
+    color: white;
+    font-size: 8vmin;
+    font-style: italic;
+}
+#mainBody div div h6 {
+    color: white;
+    font-size: 3vmin;
+
+}
+logotray div {
+    position:relative;
+    z-index: 2;
 }
 .content{
     margin-left: 10%;
@@ -106,7 +127,7 @@ h6 {
 .intro-message > h1 {
     margin: 0;
     text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
-    font-family: serif;
+    font-family: "Corbel",sans-serif;
     font-size: 10em;
 }
 
@@ -114,6 +135,38 @@ h6 {
     width: 400px;
     border-top: 1px solid #f8f8f8;
     border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.parallelogram {
+    width: 95%;
+    height: 15vmin;
+    -webkit-transform: skew(-30deg);
+       -moz-transform: skew(-30deg);
+         -o-transform: skew(-30deg);
+    background-color: #a3d39c;
+    position:relative;
+    top: 20em;
+}
+
+.togglePic {
+    display: block;
+    width: 210px;
+    height: 210px;
+    text-indent: -99999px;
+    margin-bottom: 2em;
+
+}
+.car {
+    background: url('../img/car.png') bottom;
+}
+.bag  {
+    background: url('../img/bag.png') bottom;
+}
+.pilot {
+    background: url('../img/pilot.png') bottom;
+}
+.togglePic:hover {
+    background-position: 0 0;
 }
 
 .intro-message > h3 {
@@ -146,6 +199,27 @@ h6 {
     .modal-dialog{
     width: 100%;
     height: auto;
+    }
+    .togglePic{
+        top: 50em;
+        width: 105px;
+        height: 105px;
+        margin-bottom: 1em;
+    }
+
+    .parallelogram {
+        top: 10em;
+    }
+
+    .bag  {
+    background: url('../img/bag_xs.png') bottom;
+}
+    .car  {
+    background: url('../img/car_xs.png') bottom;
+}
+    .pilot  {
+    background: url('../img/pilot_xs.png') bottom;
+}
 }
 }
 
@@ -207,6 +281,9 @@ h6 {
 
 
 }
+
+
+
 
 @media(max-width:767px) {
     .banner h2 {
