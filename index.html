@@ -277,6 +277,11 @@
     $(".togglePic").click(function() {
         $(".togglePic").removeClass("activeLogo");
         $(this).addClass("activeLogo");
+        $(".togglePic").animate({opacity: 0.5}, 100 , function(){
+            $(".activeLogo").css("opacity","1");
+        });
+
+
         $("subheading *").animate({opacity: 0}, 1000);
         $("logotray").animate({top: scrollLength},1000);
     });
