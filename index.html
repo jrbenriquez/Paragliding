@@ -326,16 +326,22 @@
 </div>
 
     <script type="text/JavaScript">
-
+    var scrollLength = "-28vmin";
     $('.parallax-window').parallax({imageSrc: 'img/parallax.jpg'});
 
     $(".togglePic").click(function() {
         $(".togglePic").removeClass("activeLogo");
         $(this).addClass("activeLogo");
         $("subheading").css("visibility", "hidden");
-        $("logotray").animate({top: "-28vmin"},1000);
+        $("logotray").animate({top: scrollLength},1000);
     });
-
+    
+    $("body").click(function(event) {
+        if($(event.target).hasClass('togglePic') === false){
+            $("logotray").animate({top: "0vmin"},1000);
+            $("subheading").css("visibility", "visible");
+        }
+    });
     //alert($("html").css("width"));
     </script>
 
